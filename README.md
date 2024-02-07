@@ -1,2 +1,2 @@
-# My-Taleding-Files
-Here I'm gonna upload my Taleding classes.
+# My-Talendig-Files
+Here I'm gonna upload my Talendig classes.
