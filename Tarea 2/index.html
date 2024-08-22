@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor de Notas v0.2 beta</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<!-- ============================================================================= -->
+<!-- ============================================================================= -->
+
+<body>
+
+    <header>
+        <div>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-notebook" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00bfd8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M6 4h11a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-11a1 1 0 0 1 -1 -1v-14a1 1 0 0 1 1 -1m3 0v18" />
+                <path d="M13 8l2 0" />
+                <path d="M13 12l2 0" />
+            </svg>
+            <h1>Diamond School</h1>
+        </div>
+    </header>
+
+<!-- ============================================================================= -->
+
+    <main>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Matrícula</th>
+                    <th>Nombre</th>
+                    <th>Calificación 1</th>
+                    <th>Calificación 2</th>
+                    <th>Calificación 3</th>
+                    <th>Calificación 4</th>
+                    <th>Calificación Final</th>
+                    <th>Estado</th>
+                </tr>
+            </thead>
+            <tbody id="cuerpotabla">
+                <!-- <tr>
+                    <td id="t-matricula"></td>
+                    <td id="t-nombre"></td>
+                    <td id="t-c1"></td>
+                    <td id="t-c2"></td>
+                    <td id="t-c3"></td>
+                    <td id="t-c4"></td>
+                    <td id="t-cf"></td>
+                    <td id="t-estado"></td>
+                    <td>
+                        <input type="button" value="🖋"><input type="button" value="❌">
+                    </td>
+                </tr> -->
+            </tbody>
+        </table>
+
+        <input id="modal" type="button" value="Agregar estudiante a la tabla">
+
+    </main>
+
+<!-- ============================================================================= -->
+<!-- ============================================================================= -->
+                               <!-- MODAL -->
+<!-- ============================================================================= -->
+<!-- ============================================================================= -->
+
+<div id="modal">
+    <div>
+        
+        <h3>Agregar estudiante y calificación a la tabla</h3>
+
+        <form>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Matrícula</th>
+                        <th>Nombre</th>
+                        <th>Calificación 1</th>
+                        <th>Calificación 2</th>
+                        <th>Calificación 3</th>
+                        <th>Calificación 4</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <input id="t-matricula" type="text" placeholder="Matrícula">
+                        </td>
+                        <td>
+                            <input id="t-nombre" type="text" placeholder="Nombre">
+                        </td>
+                        <td>
+                            <input id="t-c1" type="number" placeholder="Primera Calificación">
+                        </td>
+                        <td>
+                            <input id="t-c2" type="number" placeholder="Segunda Calificación">
+                        </td>
+                        <td>
+                            <input id="t-c3" type="number" placeholder="Tercera Calificación">
+                        </td>
+                        <td>
+                            <input id="t-c4" type="number" placeholder="Cuarta Calificación">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </form>
+
+        <input id="agregar" type="button" value="Agregar">
+        <input id="cancelar" type="button" value="Cancelar">
+
+    </div>
+</div>
+
+<!-- ============================================================================= -->
+<!-- ============================================================================= -->
+                               <!-- MODAL -->
+<!-- ============================================================================= -->
+<!-- ============================================================================= -->
+
+    <footer>
+        <p>Contacto: +1 (809) 781-5280</p>
+        <p>diamondschoolinstitute.com.do</p>
+        <p>All Rights Reserved</p>
+    </footer>
+
+<!-- ============================================================================= -->
+
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+<!-- ============================================================================= -->
+<!-- ============================================================================= -->
+
+</html>
