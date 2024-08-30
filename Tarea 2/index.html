@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Editor de Notas v0.2 beta</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="stylesheet" href="bootstrap.min.css"> -->
 </head>
 
 <!-- ============================================================================= -->
@@ -28,6 +29,10 @@
 
     <main>
 
+        <h2>TABLA DE ESTUDIANTES</h2>
+        
+        <hr class="hr">
+
         <table>
             <thead>
                 <tr>
@@ -41,24 +46,37 @@
                     <th>Estado</th>
                 </tr>
             </thead>
+<!-- ============================================================================= -->
             <tbody id="cuerpotabla">
                 <!-- <tr>
-                    <td id="t-matricula"></td>
-                    <td id="t-nombre"></td>
-                    <td id="t-c1"></td>
-                    <td id="t-c2"></td>
-                    <td id="t-c3"></td>
-                    <td id="t-c4"></td>
-                    <td id="t-cf"></td>
-                    <td id="t-estado"></td>
-                    <td>
-                        <input type="button" value="🖋"><input type="button" value="❌">
-                    </td>
+                    <td>Matrícula</td>
+                    <td>Nombre</td>
+                    <td>Calificación 1</td>
+                    <td>Calificación 2</td>
+                    <td>Calificación 3</td>
+                    <td>Calificación 4</td>
+                    <td>Calificación Final</td>
+                    <td>Estado</td>
                 </tr> -->
+
             </tbody>
+            <tfoot>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tfoot>
         </table>
 
-        <input id="modal" type="button" value="Agregar estudiante a la tabla">
+        <hr class="hr">
+
+        <input id="modalbutton" type="button" value="Agregar estudiante a la tabla">
 
     </main>
 
@@ -69,53 +87,46 @@
 <!-- ============================================================================= -->
 
 <div id="modal">
-    <div>
         
-        <h3>Agregar estudiante y calificación a la tabla</h3>
+    <h3>Agregar estudiante y calificación <br> a la tabla</h3>
 
-        <form>
+        <div class="modal-inputs-container">
+            <div class="modal-labels">
+                <label class=>Matrícula:</label>
+                <input id="t-matricula" type="text" class="modalinput" placeholder="Matrícula">
+            </div>
+            <hr class="modalhr">
+            <div class="modal-labels">
+                <label>Nombre:</label>
+                <input id="t-nombre" type="text" class="modalinput" placeholder="Nombre">
+            </div>
+            <hr class="modalhr">
+            <div class="modal-labels">
+                <label>Nota 1:</label>
+                <input id="t-c1" type="number" class="modalinput" placeholder="Primera Calificación">
+            </div>
+            <hr class="modalhr">
+            <div class="modal-labels">
+                <label>Nota 2:</label>
+                <input id="t-c2" type="number" class="modalinput" placeholder="Segunda Calificación">
+            </div>
+            <hr class="modalhr">
+            <div class="modal-labels">
+                <label>Nota 3:</label>
+                <input id="t-c3" type="number" class="modalinput" placeholder="Tercera Calificación">
+            </div>
+            <hr class="modalhr">
+            <div class="modal-labels">
+                <label>Nota 4:</label>
+                <input id="t-c4" type="number" class="modalinput" placeholder="Cuarta Calificación">
+            </div>
 
-            <table>
-                <thead>
-                    <tr>
-                        <th>Matrícula</th>
-                        <th>Nombre</th>
-                        <th>Calificación 1</th>
-                        <th>Calificación 2</th>
-                        <th>Calificación 3</th>
-                        <th>Calificación 4</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            <input id="t-matricula" type="text" placeholder="Matrícula">
-                        </td>
-                        <td>
-                            <input id="t-nombre" type="text" placeholder="Nombre">
-                        </td>
-                        <td>
-                            <input id="t-c1" type="number" placeholder="Primera Calificación">
-                        </td>
-                        <td>
-                            <input id="t-c2" type="number" placeholder="Segunda Calificación">
-                        </td>
-                        <td>
-                            <input id="t-c3" type="number" placeholder="Tercera Calificación">
-                        </td>
-                        <td>
-                            <input id="t-c4" type="number" placeholder="Cuarta Calificación">
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-
-        </form>
-
-        <input id="agregar" type="button" value="Agregar">
-        <input id="cancelar" type="button" value="Cancelar">
-
+        <div class="modal-buttons">
+            <input id="agregar" class="modal-button add-modal-button" type="button" value="Agregar">
+            <input id="cancelar" class="modal-button cancel-modal-button" type="button" value="Cancelar">
+        </div>
     </div>
+
 </div>
 
 <!-- ============================================================================= -->
@@ -132,7 +143,7 @@
 
 <!-- ============================================================================= -->
 
-<script src="script.js"></script>
+<script src="script2.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
